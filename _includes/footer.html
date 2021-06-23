@@ -1,0 +1,52 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <table style="border-collapse: collapse; border: none;">
+          <tr style="border: none;">
+            <td style="border: none;" align="left" valign="top">
+              <p class="feed-subscribe">
+                <a href="{{ 'feed.xml' | relative_url }}">
+                  <svg class="svg-icon orange">
+                    <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+                  </svg><span>Subscribe</span>
+                </a>
+              </p>
+            {%- if site.author %}
+              <ul class="contact-list">
+                {% if site.author.name -%}
+                  <li class="p-name">{{ site.author.name | escape }}</li>
+                {% endif -%}
+                {% if site.author.email -%}
+                  <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+                {%- endif %}
+              </ul>
+            {%- endif %}
+            </td>
+            <td style="border: none; min-width:100px">
+                <img src="/imgs/avatar.png" width="100px" height="100px"></img>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="footer-col">
+        <table style="border-collapse: collapse; border: none;">
+          <tr style="border: none;">
+            <td style="border: none;" align="left" valign="top">
+              <p>{{ site.description }}</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="social-links">
+      {%- include social.html -%}
+    </div>
+
+  </div>
+
+</footer>
