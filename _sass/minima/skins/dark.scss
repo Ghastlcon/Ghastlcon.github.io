@@ -1,7 +1,6 @@
 @charset "utf-8";
 
-// $brand-color:           #999999 !default;
-$brand-color:           #aaaaaa !default;
+$brand-color:           #999999 !default;
 $brand-color-light:     lighten($brand-color, 5%) !default;
 $brand-color-dark:      darken($brand-color, 35%) !default;
 
@@ -10,7 +9,7 @@ $brand-color-dark:      darken($brand-color, 35%) !default;
 // $text-color:            #bbbbbb !default;
 // $background-color:      #181818 !default;
 // $code-background-color: #212121 !default;
-$text-color:            #fdfdfd !default;
+$text-color:            #d2d2d2 !default;
 $background-color:      #000000 !default;
 $code-background-color: #090909 !default;
 
